@@ -1,4 +1,4 @@
-INSERT INTO schools (burger_name,devoured) VALUES ("Cheeseburger", False);
-INSERT INTO schools (burger_name,devoured)VALUES ("lambburger", true);
-INSERT INTO schools (burger_name,devoured) VALUES ("TurkeyBurger", false);
-INSERT INTO schools (burger_name,devoured) VALUES ("veggie", false);
+INSERT INTO burgers (burger_name,devoured) VALUES ("Cheeseburger", False);
+INSERT INTO burgers (burger_name,devoured)VALUES ("lambburger", true);
+INSERT INTO burgers (burger_name,devoured) VALUES ("TurkeyBurger", false);
+INSERT INTO burgers (burger_name,devoured) VALUES ("veggie", false);
