@@ -6,6 +6,7 @@ var router = express.Router();
 var burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
+//this is to display all the burgers once user goes to this url
 router.get("/", function(req, res) {
   burger.all(function(data) {
     var hbsObject = {
@@ -15,15 +16,16 @@ router.get("/", function(req, res) {
     res.render("index", hbsObject);
   });
 });
-
+//create a burger in 
 router.post("/api/burgers", function(req, res) {
   burger.create([
-    "name", "sleepy"
+    "burger_name", "devoured"
   ], [
-    req.body.name, req.body.sleepy
+    req.body.burger_name, req.body.devoured
   ], function(result) {
     // Send back the ID of the new quote
-    res.json({ id: result.insertId });
+    res.json("{ testing! }");
+   // res.json({ id: result.insertId });
   });
 });
 
