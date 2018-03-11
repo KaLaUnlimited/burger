@@ -25,10 +25,10 @@ $(function() {
   $(".create-form").on("click", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
-console.log("testing!")
+
     var newBurger= {
-      name: $("#burg").val().trim(),
-      sleepy: false
+      burger_name: $("#burg").val().trim(),
+      devoured: 0
     };
     console.log(newBurger);
 

@@ -60,9 +60,9 @@ var orm = {
     queryString += printQuestionMarks(vals.length);
     queryString += ") ";
 
-    console.log(queryString);
-
-    connection.query(queryString, vals, function(err, result) {
+    console.log("queryString sent to database: " + queryString);
+    console.log("val from input : " + vals);
+    connection.query(queryString,vals, function(err, result) {
       if (err) {
         throw err;
       }
