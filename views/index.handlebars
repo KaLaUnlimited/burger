@@ -3,8 +3,11 @@
 <h2>Create The Ultimate Burger!</h2>
 <h2>Menu!</h2>
 
-
-<h2>Add a Burger</h2>
+<ul>
+  {{#each burgers}}
+  <li>  {{burger_name}} <button>Devour </button></li>
+  {{/each}}
+</ul>
 
 
 
@@ -13,8 +16,6 @@
 
 
 <form >
-
-  
 
   <div class="form-group">
     <label for="burg">Choose Your Burger Wisely :</label>
