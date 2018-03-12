@@ -8,33 +8,17 @@
 <div class="container">
 
 <div class="notDevoured split">
-<h2>Create The Ultimate Burger!</h2>
+<h2>Menu</h2>
 
-<div >
-  <ul>
+
+  <ol>
     {{#each burgers}}
       {{#unless devoured}}
-         <li> {{burger_name}} <button class="devourButton" data-devourState="{{this.devoured}}" data-id="{{this.id}}">Devour </button></li>
+         <li> <div class="burgerList"> {{burger_name}}</div> <button class="devourButton" data-devourState="{{this.devoured}}" data-id="{{this.id}}">Devour </button></li>
       {{/unless}}
     {{/each}}
-  </ul>
-</div>
-</div>
-
-<div class="Devoured split">
-
-<h2>Devoured!</h2>
-
-<ul text-align="center">
-  {{#each burgers}}
-    {{#if devoured}}
-     <li> {{burger_name}}</li>
-    {{/if}}
-  {{/each}}
-</ul>
-</div>
-
-</div>
+  </ol>
+</div><!--end of notDevoured class  -->
 
 
 <div class="burgerInput">
@@ -47,9 +31,27 @@
        <textarea id="burg" name="burg" rows="8" cols="40"></textarea>
    </div>
 
-     <button class="create-form" type="submit">Add Burger</button>
+     <button class="create-form btn btn-warning" type="submit">Add Burger</button>
   </form>
 </div>
+
+
+
+
+<div class="Devoured split">
+
+<h2>Devoured!</h2>
+
+<ol text-align="center">
+  {{#each burgers}}
+    {{#if devoured}}
+     <li> {{burger_name}}</li>
+    {{/if}}
+  {{/each}}
+</ol>
+</div><!-- end of devoured class -->
+
+</div> <!--end of container  -->
 
 
 
