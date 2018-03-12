@@ -1,4 +1,5 @@
-<h1>Eats- N- Treats!</h1>
+
+<h1 >Eats- N- Treats</h1>
 
 <div class=burgerheader>
 <iframe src="https://giphy.com/embed/AAfpHO80onDYk" width="380" height="187" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
@@ -8,13 +9,11 @@
 <div class="container">
 
 <div class="notDevoured split">
-<h2>Menu</h2>
-
 
   <ol>
     {{#each burgers}}
       {{#unless devoured}}
-         <li> <div class="burgerList"> {{burger_name}}</div> <button class="devourButton" data-devourState="{{this.devoured}}" data-id="{{this.id}}">Devour </button></li>
+         <li> <div class="burgerList"> {{burger_name}}</div> <button class="devourButton btn btn light" type="submit data-devourState="{{this.devoured}}" data-id="{{this.id}}">Devour It</button></li>
       {{/unless}}
     {{/each}}
   </ol>
@@ -27,11 +26,11 @@
   <form >
 
    <div class="form-group">
-      <label for="burg">Choose Your Burger Wisely :</label>
+    
        <textarea id="burg" name="burg" rows="8" cols="40"></textarea>
    </div>
 
-     <button class="create-form btn btn-warning" type="submit">Add Burger</button>
+     <button class="create-form btn btn-light" type="submit">Add Burger</button>
   </form>
 </div>
 
@@ -40,7 +39,7 @@
 
 <div class="Devoured split">
 
-<h2>Devoured!</h2>
+
 
 <ol text-align="center">
   {{#each burgers}}

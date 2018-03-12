@@ -1,6 +1,8 @@
 *{
+	/*font-family: 'Cabin Sketch', cursive;*/
 	box-sizing: border-box;
 	padding: 0;
+	margin:0;
 }
 body{
 
@@ -15,28 +17,30 @@ font-size:50px;
 }
 .container{
 	display: flex;
-	justify-content: space-between;
-	/*flex-direction: row;*/
+	justify-content: space-around;
+	
 }
-.split{
-	/*justify-content: space-between;*/
-}
+
 .burgerheader{
-	margin-left:480px;
+	padding:0;
+	margin:0 auto;
+	width:30%;
 }
 .notDevoured  {
-/*	float:left;*/
+
 width: 30%;
+justify-content: space-between;
 flex-direction: row;
   padding: 5px;
-  margin: 30px;
+  
   background: #faebd7;
 }
 
 .Devoured{
-	/*float: left;*/
+
+	justify-content: space-between;
 	flex-direction: row;
-	/*margin-left: : 600px;*/
+	
 	width: 360px;
 	background: #faebd7;
 
@@ -44,22 +48,17 @@ flex-direction: row;
 .burgerInput {
 	display: flex;
 	flex-direction: column;
-	/*flex-direction: column;*/
+
 	text-align: center;
+	padding-top: 30px;
 
 }
 
-form{
-	/*display: flex;
-	flex-direction: column;*/
-}
+
 textarea,label,.create-form{
 	flex-direction: column;
 }
-.create-form{
-	margin-left: 100px;
-	background: #faebd7;
-}
+
 .burgerList{
 	width: 70%;
 	
