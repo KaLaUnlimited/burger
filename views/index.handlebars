@@ -11,17 +11,6 @@
   {{/each}}
 </ul>
 
-<h2>Devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-     <li> {{burger_name}}</li>
-    {{/if}}
-  {{/each}}
-</ul>
-
-
 <h2>Add Your Burger</h2>
 
 
@@ -34,3 +23,16 @@
 
   <button class="create-form" type="submit">Add Burger</button>
 </form>
+
+
+<h2>Devoured!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+     <li> {{burger_name}}</li>
+    {{/if}}
+  {{/each}}
+</ul>
+
+
