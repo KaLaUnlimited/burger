@@ -1,4 +1,4 @@
-# burger
+# Burger
 
 A nifty burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). This web application uses 
 * __MVC__ design pattern.
