@@ -5,11 +5,21 @@
 
 <ul>
   {{#each burgers}}
-  <li>  {{burger_name}} <button class="devourButton" data-devourState="{{this.devoured}}" data-id="{{this.id}}">Devour </button></li>
+{{#unless devoured}}
+  <li> {{burger_name}} <button class="devourButton" data-devourState="{{this.devoured}}" data-id="{{this.id}}">Devour </button></li>
+  {{/unless}}
   {{/each}}
 </ul>
 
+<h2>Devoured!</h2>
 
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+     <li> {{burger_name}}</li>
+    {{/if}}
+  {{/each}}
+</ul>
 
 
 <h2>Add Your Burger</h2>
