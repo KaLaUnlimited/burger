@@ -1,38 +1,57 @@
 <h1>Eats- N- Treats!</h1>
 
+<div class=burgerheader>
+<iframe src="https://giphy.com/embed/AAfpHO80onDYk" width="380" height="187" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
+
+</div>
+
+<div class="container">
+
+<div class="notDevoured split">
 <h2>Create The Ultimate Burger!</h2>
-<h2>Menu!</h2>
 
-<ul>
-  {{#each burgers}}
-{{#unless devoured}}
-  <li> {{burger_name}} <button class="devourButton" data-devourState="{{this.devoured}}" data-id="{{this.id}}">Devour </button></li>
-  {{/unless}}
-  {{/each}}
-</ul>
+<div >
+  <ul>
+    {{#each burgers}}
+      {{#unless devoured}}
+         <li> {{burger_name}} <button class="devourButton" data-devourState="{{this.devoured}}" data-id="{{this.id}}">Devour </button></li>
+      {{/unless}}
+    {{/each}}
+  </ul>
+</div>
+</div>
 
-<h2>Add Your Burger</h2>
-
-
-<form >
-
-  <div class="form-group">
-    <label for="burg">Choose Your Burger Wisely :</label>
-    <textarea id="burg" name="burg" rows="8" cols="40"></textarea>
-  </div>
-
-  <button class="create-form" type="submit">Add Burger</button>
-</form>
-
+<div class="Devoured split">
 
 <h2>Devoured!</h2>
 
-<ul>
+<ul text-align="center">
   {{#each burgers}}
     {{#if devoured}}
      <li> {{burger_name}}</li>
     {{/if}}
   {{/each}}
 </ul>
+</div>
+
+</div>
+
+
+<div class="burgerInput">
+  <h2>Add Your Burger</h2>
+
+  <form >
+
+   <div class="form-group">
+      <label for="burg">Choose Your Burger Wisely :</label>
+       <textarea id="burg" name="burg" rows="8" cols="40"></textarea>
+   </div>
+
+     <button class="create-form" type="submit">Add Burger</button>
+  </form>
+</div>
+
+
+
 
 
