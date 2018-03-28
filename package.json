@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node server.js"
   },
+  "engines": {
+    "node": "8.1.0"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KaLaUnlimited/burger.git"
