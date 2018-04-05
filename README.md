@@ -6,4 +6,4 @@ A nifty burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (
 * __Handlebar__ used to generate the HTML.
 
 
-https://enigmatic-reaches-56693.herokuapp.com/
+https://soothing-willows.herokuapp.com/
